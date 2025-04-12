@@ -4,11 +4,15 @@ import './index.css'
 import App from './App.tsx'
 import { Amplify } from 'aws-amplify';
 import outputs from '../amplify_outputs.json';
+import { Authenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
 
 Amplify.configure(outputs);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <Authenticator>
+      <App/>
+    </Authenticator>
   </StrictMode>,
 )
