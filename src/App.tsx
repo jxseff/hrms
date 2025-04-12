@@ -1,9 +1,10 @@
-import { useState } from 'react'
+
 import './App.css'
 import { useAuthenticator } from '@aws-amplify/ui-react';
 
+
 function App() {
-  const { user, signOut } = useAuthenticator();
+  const { signOut } = useAuthenticator();
 
   return (
     <>
