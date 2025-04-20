@@ -68,7 +68,7 @@ const { signOut } = useAuthenticator();
             <List>
               {['Employee', 'Attendance',
               'Payroll', 'Self-Service',
-            'Compliance'].map((text, index) => (
+            'Compliance'].map((text) => (
                 <ListItem key={text} disablePadding>
                   <ListItemButton>
                     <ListItemIcon>
